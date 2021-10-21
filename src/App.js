@@ -1,5 +1,6 @@
 import React from 'react';
-// import logo from './logo.svg';
+import eagle from './eagle.png';
+import ocean from './ocean.jpg';
 import './App.css';
 // import logo from './eagle.png'
 
@@ -9,15 +10,28 @@ const App = () => {
   return (
   <div className="app-wrapper">
      <header className="header">
-       <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/travels-logo-png-for-business-design-template-03d1ab18244e3126af5a7b41554e7c99_screen.jpg?ts=1566599731" alt="eagle"></img> 
+     <img src={eagle} className="App-eagle" alt="eagle" />
      </header>
+
      <nav className="nav">
-       <div>Profile</div>
-       <div>Messages</div>
-       <div>News</div>
-       <div>Musik</div>
+       <div><a href="#s">Profile</a></div>
+       <div><a href="#s">Messages</a></div>
+       <div><a href="#s">News</a></div>
+       <div><a href="#s">Musik</a></div>
+       <br/>
+       <div><a href="#s">Settings</a></div>
      </nav>
-     <div className="content">Main content</div>
+
+     <div className="content">
+       <div className="imgCont"><img src={ocean} className="App-ocean" alt="ocean" /></div>
+       <div>Avatar + discription</div>
+       <div>My posts
+         <div>newPost1</div>
+         <div>newPost2</div>
+       </div>
+
+     
+     </div>
   </div>
   );
 }

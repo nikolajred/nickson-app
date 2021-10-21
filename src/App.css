@@ -1,6 +1,9 @@
 .app-wrapper{
   display: grid;
 
+  margin: 0 auto;
+  width: 1400px;
+
   grid-template-areas: "header header"
                         "nav content";
 
@@ -25,6 +28,10 @@
 .content{
   grid-area: content;
   background-color:coral;
+}
+.imgCont{
+  /* max-width: 80%;
+  max-height: 80%; */
 }
 
 
