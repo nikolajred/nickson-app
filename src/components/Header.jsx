@@ -4,9 +4,8 @@ import eagle from "../eagle.png";
 const Header = () =>{
     return(
         <header className="header">
-        <div>
             <img src={eagle} className="App-eagle" alt="eagle" />
-        </div>
+            <h1>Eagles</h1>
     </header>);
 }
 export default Header;
