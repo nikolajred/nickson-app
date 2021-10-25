@@ -1,10 +1,11 @@
 import React from 'react';
 import eagle from "../eagle.png";
+import classes from './Header.module.css';
 
 const Header = () =>{
     return(
-        <header className="header">
-            <img src={eagle} className="App-eagle" alt="eagle" />
+        <header className={classes.header}>
+            <img src={eagle} className={classes.App-eagle} alt="eagle" />
             <h1>Eagles</h1>
     </header>);
 }
