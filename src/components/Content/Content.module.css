@@ -1,7 +1,8 @@
 .content{
     grid-area: content;
     background-color: antiquewhite;
-    /*padding: 10px;*/
+    padding: inherit;
+    max-width: 1400px;
     /*border: 1px solid black;*/
 }
 .content_ocean{

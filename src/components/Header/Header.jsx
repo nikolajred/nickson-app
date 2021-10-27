@@ -1,5 +1,5 @@
 import React from 'react';
-import eagle from "../eagle.png";
+import eagle from "../../eagle.png";
 import classes from './Header.module.css';
 
 const Header = () =>{

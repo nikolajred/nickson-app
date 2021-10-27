@@ -4,6 +4,8 @@
     background-color: aqua;
     display: grid;
     grid-template-columns: 200px 1fr;
+
+
 }
 .header img{
     height:200px;

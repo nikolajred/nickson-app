@@ -1,7 +1,8 @@
 import React from 'react';
-import ocean from "../ocean.jpg";
-import avatar from "../avatar.jpg";
+import ocean from "../../ocean.jpg";
+import avatar from "../../avatar.jpg";
 import classes from './Content.module.css';
+import Posts from "./Posts/Posts";
 
 const Content = () =>{
     return(
@@ -17,10 +18,7 @@ const Content = () =>{
                 <h3>Харьковский полетехнический институт</h3>
             </div>
         </div>
-        <div>My posts
-            <div>newPost1</div>
-            <div>newPost2</div>
-        </div>
+        <Posts/>
     </div>);
 }
 export default Content;
