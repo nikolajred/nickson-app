@@ -10,7 +10,7 @@ const Content = () =>{
         <img src={ocean} className={classes.content_ocean} alt="ocean" />
         <div>
             <img src={avatar} className={classes.content_avatar} alt="avatar"/>
-            <div>
+            <div className={classes.description}>
                 <h2>Василий Петренко</h2>
                 <h3>Дата рождения: 01 августа 1983г.</h3>
                 <h3>г. Харьков</h3>

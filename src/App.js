@@ -10,11 +10,10 @@ import Content from "./components/Content/Content";
 const App = () => {
   return (
   <div className="app-wrapper">
-    <Header />
+    <Header/>
     <Navbar/>
     <Content/>
   </div>
-  );
-}
+  )};
 
 export default App;

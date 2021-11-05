@@ -1,7 +1,6 @@
 .nav{
     grid-area: nav;
     background-color: aquamarine;
-
 }
 .nav div{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -9,6 +8,10 @@
     font-weight: 300;
     margin: 10px;
     text-shadow: 1px 1px 1px blue;
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
 }
 
 .nav div a{
