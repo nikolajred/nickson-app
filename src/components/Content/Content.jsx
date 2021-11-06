@@ -6,7 +6,7 @@ import Posts from "./Posts/Posts";
 
 const Content = () =>{
     return(
-        <div className={classes.content}>
+        <div>
         <img src={ocean} className={classes.content_ocean} alt="ocean" />
         <div>
             <img src={avatar} className={classes.content_avatar} alt="avatar"/>

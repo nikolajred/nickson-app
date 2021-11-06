@@ -1,19 +1,24 @@
 import React from 'react';
 import './App.css';
-import Header from "./components/Header/Header";
-import Navbar from "./components/Navbar/Navbar";
-import Content from "./components/Content/Content";
-
-
+import Header from './components/Header/Header';
+import Navbar from './components/Navbar/Navbar';
+import Content from './components/Content/Content';
+import Dialogs from './components/Dialogs/Dialogs';
 
 
 const App = () => {
-  return (
-  <div className="app-wrapper">
-    <Header/>
-    <Navbar/>
-    <Content/>
-  </div>
-  )};
+    return (
+        <div className='app-wrapper'>
+            <Header/>
+            <Navbar/>
+           <div className='app-wrapper-content'>
+             <Dialogs/>
+             {/*<Content/>*/}
+           </div>
+
+
+        </div>
+    )
+};
 
 export default App;

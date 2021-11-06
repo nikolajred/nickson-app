@@ -1,10 +1,4 @@
-.content{
-    grid-area: content;
-    background-color: antiquewhite;
-    padding: inherit;
-    max-width: 1400px;
-    /*border: 1px solid black;*/
-}
+
 .content_ocean{
     width: 1400px;
     height: 500px;

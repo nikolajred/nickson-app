@@ -9,6 +9,7 @@ const Posts = () =>{
             <form action="post">
                 <p>My posts</p>
                 <input type="text"/>
+                <br/>
                 <button type= "submit">Submit</button>
             </form>
             <Post message = 'Hello!'/>
