@@ -1,6 +1,6 @@
 import React from 'react';
-import ocean from "../../ocean.jpg";
-import avatar from "../../avatar.jpg";
+import ocean from "../../img/ocean.jpg";
+import avatar from "../../img/avatar.jpg";
 import classes from './Content.module.css';
 import Posts from "./Posts/Posts";
 

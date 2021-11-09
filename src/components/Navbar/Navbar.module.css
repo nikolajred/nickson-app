@@ -2,7 +2,7 @@
     grid-area: nav;
     background-color: aquamarine;
 }
-.nav div{
+.item {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 30px;
     font-weight: 300;
@@ -14,6 +14,7 @@
     align-items: center;
 }
 
-.nav div a{
+.nav a{
     text-decoration: none;
 }
+
