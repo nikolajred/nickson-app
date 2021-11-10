@@ -2,19 +2,26 @@
     grid-area: nav;
     background-color: aquamarine;
 }
-.item {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 30px;
-    font-weight: 300;
-    margin: 10px;
-    text-shadow: 1px 1px 1px blue;
+ .item {
     display: flex;
-    margin: 2rem 0rem;
-    padding: 1rem 5rem;
+    margin: 3rem 0rem;
+    padding: 2rem 5rem;
     align-items: center;
 }
 
-.nav a{
+.item a{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    color: #f18a8a;
     text-decoration: none;
+    text-shadow: 1px 1px 1px blue;
 }
 
+.item a.active{
+    color: gold;
+}
+
+/*.item a:hover{*/
+/*    color: #0c25a7;*/
+/*}*/
