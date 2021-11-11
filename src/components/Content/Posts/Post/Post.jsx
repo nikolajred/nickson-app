@@ -9,6 +9,9 @@ const Post = (props) =>{
             <span>
                 {props.message}
             </span>
+            <div className={classes.like}>
+               like {props.like}
+            </div>
         </div>
     )};
 

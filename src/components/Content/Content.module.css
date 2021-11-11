@@ -1,4 +1,6 @@
-
+.content{
+    grid-area: content;
+}
 .content_ocean{
     width: 1400px;
     height: 500px;

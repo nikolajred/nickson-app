@@ -12,8 +12,8 @@ const Posts = () =>{
                 <br/>
                 <button type= "submit">Submit</button>
             </form>
-            <Post message = 'Hello!'/>
-            <Post message = 'How are you?'/>
+            <Post message = 'Hello!' like = '10'/>
+            <Post message = 'How are you?' like = '3'/>
         </div>);
 }
 export default Posts;

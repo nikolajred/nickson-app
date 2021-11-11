@@ -1,0 +1,33 @@
+.dialogs{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+
+}
+
+.dialog{
+    margin-top: 50px;
+}
+
+.item {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    marging: 30px;
+    color: #1985ff;
+}
+
+.item .activeItem{
+    color: gold;
+}
+.messages{
+    margin-top: 50px;
+}
+
+.message{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    marging: 30px;
+}

@@ -13,15 +13,12 @@
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 40px;
     font-weight: 300;
-    color: #f18a8a;
     text-decoration: none;
-    text-shadow: 1px 1px 1px blue;
+    text-shadow: 1px 1px 1px #107cff;
+    color: #f17a19;
 }
 
 .item a.active{
-    color: gold;
+    color: #ff223b;
 }
 
-/*.item a:hover{*/
-/*    color: #0c25a7;*/
-/*}*/
