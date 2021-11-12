@@ -1,12 +1,12 @@
-/**{*/
-/*  margin: 0;*/
-/*  padding: 0;*/
-/*  box-sizing: border-box;*/
-/*}*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
     box-sizing: border-box;
-    /*  background: linear-gradient(to right top, #1764df, #dedf2e);*/
+
     background: rgba(8, 102, 122, 0.49);
     display: flex;
     align-items: center;
@@ -29,6 +29,6 @@ body {
     padding: inherit;
     max-width: 1400px;
     min-width: 1400px;
-    /*border: 1px solid black;*/
+
 }
 

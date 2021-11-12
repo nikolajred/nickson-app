@@ -8,26 +8,25 @@
     margin-top: 50px;
 }
 
-.item {
+.item{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 30px;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     marging: 30px;
-    color: #1985ff;
 }
 
-.item .activeItem{
-    color: gold;
+.item a{
+
+    color: #ff5d10;
+    text-decoration: none;
 }
+
+a:hover{
+    color: #112aff;
+}
+
 .messages{
     margin-top: 50px;
 }
 
-.message{
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 30px;
-    text-align: center;
-    padding: 20px;
-    marging: 30px;
-}
