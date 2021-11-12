@@ -18,7 +18,7 @@
     color: #f17a19;
 }
 
-.item a.active{
-    color: #ff223b;
+.item a:hover{
+    color: gold;
 }
 
