@@ -3,9 +3,9 @@ import classes from './Dialogs.module.css';
 import {NavLink} from "react-router-dom";
 
 const DialogItem = (props) => {
-    return(
+    return (
         <div className={classes.item}>
-            <NavLink to={'/dialogs/'+ props.id} >
+            <NavLink to={'/dialogs/' + props.id}>
                 {props.name}
             </NavLink>
         </div>
@@ -14,7 +14,7 @@ const DialogItem = (props) => {
 };
 
 const MessageItem = (props) => {
-    return(
+    return (
         <div className={classes.item}>{props.message}</div>
     )
 }
@@ -35,20 +35,20 @@ const MessagesData = [
 ]
 
 const Dialogs = (props) => {
-    return(
+    return (
         <div className={classes.dialogs}>
             <div className={classes.dialog}>
-                <DialogItem id = {DialogsData[0].id} name={DialogsData[0].name}/>
-                <DialogItem id = {DialogsData[1].id} name={DialogsData[1].name}/>
-                <DialogItem id = {DialogsData[2].id} name={DialogsData[2].name}/>
-                <DialogItem id = {DialogsData[3].id} name={DialogsData[3].name}/>
-                <DialogItem id = {DialogsData[4].id} name={DialogsData[4].name}/>
-                <DialogItem id = {DialogsData[5].id} name={DialogsData[5].name}/>
+                <DialogItem id={DialogsData[0].id} name={DialogsData[0].name}/>
+                <DialogItem id={DialogsData[1].id} name={DialogsData[1].name}/>
+                <DialogItem id={DialogsData[2].id} name={DialogsData[2].name}/>
+                <DialogItem id={DialogsData[3].id} name={DialogsData[3].name}/>
+                <DialogItem id={DialogsData[4].id} name={DialogsData[4].name}/>
+                <DialogItem id={DialogsData[5].id} name={DialogsData[5].name}/>
             </div>
             <div className={classes.messages}>
-                <MessageItem message = 'Hi!'/>
-                <MessageItem message = 'How are you?'/>
-                <MessageItem message = 'Glad to see you!'/>
+                <MessageItem message={MessagesData[0].message}/>
+                <MessageItem message={MessagesData[1].message}/>
+                <MessageItem message={MessagesData[2].message}/>
             </div>
         </div>
 
