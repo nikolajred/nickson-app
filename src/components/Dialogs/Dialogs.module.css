@@ -37,3 +37,12 @@
     marging: 30px;
     color: #4f5f51;
 }
+
+.messageArea{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 50px;
+    marging: 50px;
+    color: #4f5f51;
+}

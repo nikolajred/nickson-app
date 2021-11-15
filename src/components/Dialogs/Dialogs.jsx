@@ -8,14 +8,20 @@ import MessageItem from "./MessageItem/MessageItem";
 
 
 const Dialogs = (props) => {
-    const DialogsElements = props.dialogs.map(dialog =>
+    const DialogsElements = props.state.dialogs.map(dialog =>
         <DialogItem id = {dialog.id} name = {dialog.name}/>
     );
 
 
-    const MessagesElements = props.messages.map(message =>
+    const MessagesElements = props.state.messages.map(message =>
         <MessageItem message={message.message}/>
     );
+
+    let newRef = React.createRef();
+    let addMessage = () =>{
+        let newMessage = newRef.current.value;
+        alert(newMessage);
+    }
 
     return (
         <div className={classes.dialogs}>
@@ -23,8 +29,17 @@ const Dialogs = (props) => {
                 {DialogsElements}
             </div>
             <div className={classes.messages}>
-                {MessagesElements}
+                <div className={classes.message}>
+                    {MessagesElements}
+                </div>
+                <div className={classes.messageArea}>
+                    <p>message</p>
+                    <textarea ref={newRef}></textarea>
+                    <br/>
+                    <button onClick={addMessage}>Submit</button>
+                </div>
             </div>
+
         </div>
 
     )
