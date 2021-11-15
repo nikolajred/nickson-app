@@ -5,8 +5,6 @@ const state = {
             {id: '1', post: 'Hello!', like : '10' },
             {id: '2', post: 'How are you?', like : '13' },
         ]
-
-
     },
     dialogsPage:{
         dialogs : [
@@ -23,8 +21,12 @@ const state = {
             {id: '3', message: 'Glad to see you!'}
         ]
     }
+}
 
+export let addNewPost = (newPost) => {
 
+    let newObj = {id: '3', post: newPost, like: '0'};
+    state.contentPage.posts.push(newObj);
 }
 
 export default state;

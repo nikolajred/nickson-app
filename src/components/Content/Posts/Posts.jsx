@@ -2,15 +2,18 @@ import React from 'react';
 import classes from './Posts.module.css';
 import Post from './Post/Post'
 
+
 const Posts = (props) => {
 
     const PostsElements = props.posts.map(posts =>
-        <Post message={posts.post} like= {posts.like}/>
+        <Post message={posts.post} like={posts.like}/>
     );
-    let newRef = React.createRef(), addPost = () => {
-        // let post = document.getElementById('post-area').value;
+
+    let newRef = React.createRef();
+    let addPost = () => {
+
         let newPost = newRef.current.value;
-        alert(newPost);
+        props.addNewPost(newPost);
     };
     return (
         <div className={classes.posts}>
