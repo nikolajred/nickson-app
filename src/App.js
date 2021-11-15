@@ -12,7 +12,9 @@ import Settings from "./components/Settings/Settings";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 
-const App = () => {
+const App = (props) => {
+
+
     return (
         <BrowserRouter>
             <div className='app-wrapper'>
@@ -20,8 +22,8 @@ const App = () => {
                 <Navbar/>
                 <div className='app-wrapper-content'>
                     <Routes>
-                        <Route path="/content" element={<Content/>}/>
-                        <Route path="/dialogs" element={<Dialogs/>}/>
+                        <Route path="/content" element={<Content posts={props.posts}/>}/>
+                        <Route path="/dialogs" element={<Dialogs dialog={props.dialog} message={props.message}/>}/>
                         <Route path="/news" element={<News/>}/>
                         <Route path="/music" element={<Music/>}/>
                         <Route path="/settings" element={<Settings/>}/>

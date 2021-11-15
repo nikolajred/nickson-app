@@ -2,13 +2,10 @@ import React from 'react';
 import classes from './Posts.module.css';
 import Post from './Post/Post'
 
-const Posts = () => {
-    const PostsData = [
-        {id: '1', post: 'Hello!', like : '10' },
-        {id: '2', post: 'How are you?', like : '13' },
-    ];
-    const PostsElements = PostsData.map(post =>
-        <Post message={post.post} like= {post.like}/>
+const Posts = (props) => {
+
+    const PostsElements = props.posts.map(posts =>
+        <Post message={posts.post} like= {posts.like}/>
     );
     return (
         <div className={classes.posts}>
@@ -16,6 +13,6 @@ const Posts = () => {
             <textarea></textarea>
             <button>Submit</button>
             {PostsElements}
-        </div>);
-}
+        </div>)
+};
 export default Posts;

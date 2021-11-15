@@ -1,12 +1,14 @@
 import React from 'react';
 import Posts from "./Posts/Posts";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
+import Post from "./Posts/Post/Post";
 
-const Content = () => {
+const Content = (props) => {
+
     return (
         <div>
             <ProfileInfo/>
-            <Posts/>
+            <Posts posts={props.posts}/>
         </div>);
 }
 export default Content;
