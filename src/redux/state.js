@@ -1,3 +1,5 @@
+import {renderEntireTree} from "../render";
+
 const state = {
 
     contentPage:{
@@ -27,6 +29,7 @@ export let addNewPost = (newPost) => {
 
     let newObj = {id: '3', post: newPost, like: '0'};
     state.contentPage.posts.push(newObj);
+    renderEntireTree(state);
 }
 
 export default state;
