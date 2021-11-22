@@ -32,4 +32,10 @@ export let addNewPost = (newPost) => {
     renderEntireTree(state);
 }
 
+export let addNewMessage = (newMessage) => {
+
+    let newObj = {id: '4', message: newMessage};
+    state.dialogsPage.messages.push(newObj);
+    renderEntireTree(state);
+}
 export default state;

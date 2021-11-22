@@ -20,7 +20,7 @@ const Dialogs = (props) => {
     let newRef = React.createRef();
     let addMessage = () =>{
         let newMessage = newRef.current.value;
-        alert(newMessage);
+        props.addNewMessage(newMessage);
     }
 
     return (
