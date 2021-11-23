@@ -9,7 +9,7 @@ const Content = (props) => {
     return (
         <div>
             <ProfileInfo/>
-            <Posts posts={props.state.posts}  addNewPost={props.addNewPost}/>
+            <Posts posts={props.state.posts} newPostText={props.newPostText} addNewPost={props.addNewPost} updateNewPostText={props.updateNewPostText } />
         </div>);
 }
 export default Content;

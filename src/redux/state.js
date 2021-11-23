@@ -2,11 +2,14 @@ import {renderEntireTree} from "../render";
 
 const state = {
 
+
+
     contentPage:{
         posts : [
             {id: '1', post: 'Hello!', like : '10' },
             {id: '2', post: 'How are you?', like : '13' },
-        ]
+        ],
+        newPostText: 'Hi! I am newPostText'
     },
     dialogsPage:{
         dialogs : [
@@ -25,10 +28,16 @@ const state = {
     }
 }
 
-export let addNewPost = (newPost) => {
+export let addNewPost = () => {
 
-    let newObj = {id: '3', post: newPost, like: '0'};
+    let newObj = {id: '3', post: state.contentPage.newPostText, like: '0'};
     state.contentPage.posts.push(newObj);
+    state.contentPage.newPostText = ' ';
+    renderEntireTree(state);
+}
+
+export let updateNewPostText = (newText) =>{
+    state.contentPage.newPostText = newText;
     renderEntireTree(state);
 }
 
@@ -38,4 +47,6 @@ export let addNewMessage = (newMessage) => {
     state.dialogsPage.messages.push(newObj);
     renderEntireTree(state);
 }
+
+
 export default state;

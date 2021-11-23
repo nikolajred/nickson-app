@@ -21,6 +21,7 @@ const Dialogs = (props) => {
     let addMessage = () =>{
         let newMessage = newRef.current.value;
         props.addNewMessage(newMessage);
+        newRef.current.value = ' ';
     }
 
     return (
