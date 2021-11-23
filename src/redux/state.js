@@ -24,7 +24,8 @@ const state = {
             {id: '1', message: 'Hi!'},
             {id: '2', message: 'How are you?'},
             {id: '3', message: 'Glad to see you!'}
-        ]
+        ],
+        newMessage: 'Hi'
     }
 }
 
@@ -41,10 +42,16 @@ export let updateNewPostText = (newText) =>{
     renderEntireTree(state);
 }
 
-export let addNewMessage = (newMessage) => {
+export let addNewMessage = () => {
 
-    let newObj = {id: '4', message: newMessage};
+    let newObj = {id: '4', message: state.dialogsPage.newMessage};
     state.dialogsPage.messages.push(newObj);
+    state.dialogsPage.newMessage = ' ';
+    renderEntireTree(state);
+}
+
+export let updateNewMessageText = (newMessage) =>{
+    state.dialogsPage.newMessage = newMessage;
     renderEntireTree(state);
 }
 
